@@ -1,0 +1,50 @@
+/* Navigation */
+nav {
+  @apply bg-gray-800 p-2;
+}
+
+nav ul {
+  @apply list-none flex justify-center p-0;
+}
+
+nav li {
+  @apply mx-4;
+}
+
+nav a {
+  @apply text-white font-bold no-underline;
+}
+
+nav a:hover {
+  @apply underline;
+}
+
+/* Button Styles */
+button {
+  @apply px-4 py-2 mt-2 cursor-pointer bg-green-500 text-white border-none rounded-md;
+}
+
+button:hover {
+  @apply bg-green-600;
+}
+
+/* Optional: Custom styles for Cart and Product List */
+.cart-item {
+  @apply flex gap-5 items-center bg-gray-50 p-4 rounded-lg border border-gray-200 w-4/5 mx-auto;
+}
+
+.cart-item img {
+  @apply w-24 h-24 object-cover;
+}
+
+.cart-item div {
+  @apply text-left;
+}
+
+.cart-item h2 {
+  @apply m-0 text-lg font-semibold;
+}
+
+.cart-item p {
+  @apply m-0;
+}
