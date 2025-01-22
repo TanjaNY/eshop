@@ -1,10 +1,10 @@
 /* Navigation */
 nav {
-  @apply bg-gray-800 p-2;
+  @apply bg-gray-800 p-2 flex justify-center items-center; /* Center the nav bar contents */
 }
 
 nav ul {
-  @apply list-none flex justify-center p-0;
+  @apply list-none flex justify-center p-0 m-0; /* Center align the list */
 }
 
 nav li {
@@ -47,4 +47,44 @@ button:hover {
 
 .cart-item p {
   @apply m-0;
+}
+
+/* Header Styles */
+.App-header {
+  @apply flex items-center justify-center p-4 bg-gray-100; /* Align content horizontally */
+}
+
+.App-header h1 {
+  @apply text-4xl font-bold text-gray-800; /* Make the header text bigger */
+}
+
+.App-header img {
+  @apply rounded-full; /* Ensure the image retains its round shape */
+}
+
+/* Product List Styles */
+.product-container {
+  @apply flex flex-wrap gap-6 justify-center; /* Align products in a row and wrap as needed */
+  @apply overflow-x-auto; /* Add horizontal scrolling if products exceed container width */
+}
+
+.product-card {
+  @apply bg-white rounded-lg shadow-md p-4 flex-shrink-0; /* Define card dimensions and appearance */
+  width: 200px; /* Ensure consistent width for product cards */
+}
+
+.product-card img {
+  @apply w-full h-48 object-cover rounded-md mb-4;
+}
+
+.product-card h3 {
+  @apply text-xl font-semibold mb-2;
+}
+
+.product-card p {
+  @apply text-gray-600 mb-4;
+}
+
+.product-card button {
+  @apply w-full bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 transition-colors;
 }

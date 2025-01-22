@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = ({ isLoading, imageUrl, onImageError }) => (
   <header className="App-header">
-   
+   <h1>Welcome to My Shop</h1>
     {isLoading ? (
       <p>Loading...</p>
     ) : (
@@ -10,7 +10,7 @@ const Header = ({ isLoading, imageUrl, onImageError }) => (
           src={imageUrl}
           alt="Sample"
           className="mx-auto mb-4 object-cover rounded-full"
-          style={{ width: '100px', height: '100px' }}
+          style={{ width: '200px', height: '200px' }}
         onError={onImageError}
 />
       

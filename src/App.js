@@ -30,7 +30,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [cart, setCart] = useState([]);
 
-  const imageUrl = `${S3_CONFIG.BUCKET_URL}/${S3_CONFIG.IMG_FOLDER}/sample.jpg`;
+  const imageUrl = `${S3_CONFIG.BUCKET_URL}/${S3_CONFIG.IMG_FOLDER}/myshop.jpeg`;
 
   const handleImageError = (e) => {
     e.target.src = 'https://via.placeholder.com/150';
@@ -44,7 +44,7 @@ function App() {
   return (
     <div className="w-full min-h-screen bg-gray-50">
       <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-6xl">
-        <h1 className="text-3xl font-bold py-4">Welcome to My Shop</h1>
+        
         
         <Header 
           isLoading={isLoading} 
